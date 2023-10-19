@@ -53,6 +53,7 @@ for x_c in x_cen:
         temp_y.append(h)
     xs.append(temp_x)
     ys.append(temp_y)
+print(xs)
 
 for x, y in zip(xs, ys):
     pts = []
@@ -64,5 +65,5 @@ for x, y in zip(xs, ys):
     else:
         top.shapes(layer0).insert(db.DPolygon(pts))
 
-ly.write(f'{dose}_ChirpedGrating_{today}_PChirp{periods[2]}_{periods[0]}_FFChirp{ffs[2]}_{ffs[0]}.gds')     # 2 Chirps
+#ly.write(f'{dose}_ChirpedGrating_{today}_PChirp{periods[2]}_{periods[0]}_FFChirp{ffs[2]}_{ffs[0]}.gds')     # 2 Chirps
 # ly.write(f'ChirpedGrating_{today}_PChirp{periods[1]}_{periods[0]}_FFChrip{ffs[1]}_{ffs[0]}.gds')   # 3 Chirps
